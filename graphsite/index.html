@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Performance Evaluation of PHP NodeJS and Python</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+      <nav id="nav-menu-container pull-left">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#benchmark">Benchmark Tests</a></li>
+          <li><a href="#scenario">Scenario Tests</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Performance Evaluation</h1>
+      <h1>of</h1>
+      <h1>PHP, NodeJS and Python</h1>
+      <a href="#benchmark" class="btn-get-started">Results</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      BenchMark Section
+    ============================-->
+    <section id="benchmark">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Benchmark Tests</h3>
+          <p class="section-description">Benchmark tests have been done using ApacheBench. The number of requests has been set constant at 10000, and run the test with a different number of concurrent users.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/benchmarks/helloworldrequests.png" alt=""></div>
+              <h4>HelloWorld Requests/Second</h4>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/benchmarks/helloworldtime.png" alt=""></div>
+              <h4>HelloWorld Time/Requests</h4>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/benchmarks/fibrequests.png" alt=""></div>
+              <h4>Fibonacci Requests/Second</h4>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/benchmarks/fibtime.png" alt=""></div>
+              <h4>Fibonacci Time/Requests</h4>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/benchmarks/selectsqlrequests.png" alt=""></div>
+              <h4>SQL Select Requests/Second</h4>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/benchmarks/selectsqltime.png" alt=""></div>
+              <h4>SQL Select Time/Requests</h4>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+
+      <!--==========================
+      Scenario Section
+    ============================-->
+
+    <section id="scenario">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Scenario Tests</h3>
+          <p class="section-description">Scenario tests have been done using both Loadrunner and Apache Jmeter. We configured two scenarios, a login scenario and an encryption scenario. Loadrunner has been used up until the first 50 virtual users, and Jmeter has been used for higher concurrencies up until 500 virtual users.</p>
+        </div>
+
+        <h4 class="section-title">Loadrunner Results (<50 Users)</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/loginavgrsptime.png" alt=""></div>
+              <h4>Login Scenario: Mean Response Time</h4>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/loginthroughput.png" alt=""></div>
+              <h4>Login Scenario: Throughput</h4>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/encryptionavgrsptime.png" alt=""></div>
+              <h4>Encryption Scenario: Mean Response Time</h4>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/encryptionthroughput.png" alt=""></div>
+              <h4>Encryption Scenario: Throughput</h4>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:150px">
+        </div>
+
+
+        <h4 class="section-title">JMeter Results (>100 Users)</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/jmeter/loginrsptimejm.png" alt=""></div>
+             
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/jmeter/loginthroughputjm.png" alt=""></div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/jmeter/encryptionrsptimejm.png" alt=""></div>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="member">
+              <div class="pic"><img src="img/scenario/jmeter/encryptionthroughputjm.png" alt=""></div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #scenario -->
+
+
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
